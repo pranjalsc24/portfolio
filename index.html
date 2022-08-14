@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f69bac8eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="hero">
+        
+        <!-- <img src="images/profile.jpeg" alt=""> -->
+       <nav id="nav">
+               <h1>Portfolio</h1>
+               <ul id="sidemenu">
+                   <li><a href="#hero">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <!-- <li><a href="#">Services</a></li> -->
+                   <li><a href="#projects">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+      
+        <div class="container text-image" >
+            <div class="hero-text">
+                
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Pranjal Choudhari </span> <br> From Mumbai</h1>
+            </div>
+            
+        </div>
+    </div>
+
+            <!----------------------- ABOUT ME -------------------------->
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1" id="col-1">
+                            <img class="myimage"  src="images/profile.jpeg">
+                        </div>
+                        <div class="col-2">
+                            <h1 class="heading">About Me</h1>
+                            <p>I am an upcoming software engineer . I have strong skills in the field of web development created projects and have an experience in creating user friendly web interfaces . 
+                                I am eager to do challenging task in the field of coding , have a strong set of program analysis skill and problem solving ability .
+                                I am looking forward in working as a full stack web developer and as a data scientist . <br> <br>
+                                
+                                Skills Known: <br>
+                                HTML, CSS, Javascript, Python, Java, c programming, My-SQL
+                             </p>
+                             <br> <br>
+
+                            <div class="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                               <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                               <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX Designing</span> <br> Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span> <br> Creating Website</li>
+                                </ul>  
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>June 2022-August 2022</span> <br> Frontend Developer at Prabhavati Digital Services</li>
+                                </ul>  
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>March-2018 (10th) </span> <br> Percentage - 93.40</li>
+                                    <li><span>February-2020 (12th)</span> <br> Swami Vivekanand Junior College<br> Percentage - 81.54</li>
+                                    <li><span>Pursuing B.E. in Information Technology</span> <br> Shah and Anchor Kutchhi Engineering College  <br></li>
+
+                                </ul>
+                            </div>
+                        
+                        </div>
+                        
+                        </div>
+                    </div>
+
+
+                </div>
+           
+    <!-- ----------------- My project-------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="heading">My Projects</h1> 
+            <div class="project-list">
+                 <div>
+                     <h2>Hotel Management System </h2>
+                     <p>Created a application on hotel management system. I have designed frontend using java swing and MySQL used for backend. Application is for managing details of a particular hotel , which includes adding rooms by admin, etc. check in & check out of customer , selecting rooms , selecting number of beds , getting automated generated bills, etc.</p>
+                 
+                    </div>
+
+                    <div>
+                        <h2>Hotel website </h2>
+                        <p>Created a mini project for hotel management system. It is a website based project created with flask framework of python and used My-SQL for the backend.</p>
+                    
+                       </div>
+
+                       <div>
+                        <h2>Doctor website</h2>
+                        <p>Created frontend for doctor website using Html,Css,Javascript . </p>
+                    
+                       </div>
+
+                       
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------------Contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="heading">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pranjalsc24@gmail.com</p>
+                    <p><i class="fa-solid fa-house"></i>Chembur,Mumbai-400074</p>
+                    <div class="icons">
+                        
+                        <a href="https://twitter.com/Pranjal82986873?t=AF6rjh6SC0SXjBOdBqJbUQ&s=09"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=1gqq6tbs40uw3&utm_content=3w7w0dq"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pranjal-choudhari-b99833215/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images 1/pranjal's resume.pdf" download  class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Write Your Name" required>
+                        <input type="email" name="Email" placeholder="Write Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright  Made With Pranjal Choudhari
+
+            </p>
+        </div>
+    </div>
+
+
+       
+   
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+        
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6D_XvKJ5io3fiEBVZQVBlOJvV66JotbnNWdizSBVEdedJM_wS1Jg5ZxAwdi65R4XQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+    
+</body>
+</html>
+
